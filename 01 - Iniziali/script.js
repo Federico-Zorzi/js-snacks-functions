@@ -11,3 +11,6 @@ names.forEach((currentValue) => firstLetter.push(currentValue[0]));
 console.log(firstLetter);
 
 //Risultato atteso: ["A", "L", "M", "A", "G", "A"]
+
+// ! SECONDA SOLUZIONE
+console.log(names.map((currentValueMap) => currentValueMap[0]));

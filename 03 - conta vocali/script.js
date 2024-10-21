@@ -7,7 +7,9 @@ const vowels = ["a", "e", "i", "o", "u"];
 const vowelsNumber = (word, vowelsArray) => {
   let vowelsNum = 0;
   for (let i = 0; i < word.length; i++) {
-    if (vowelsArray.includes(word[i])) vowelsNum++;
+    if (vowelsArray.includes(word[i])) {
+      vowelsNum++;
+    }
   }
   console.log("il numero di vocali e': " + vowelsNum);
 };
