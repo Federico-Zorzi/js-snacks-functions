@@ -12,7 +12,7 @@ function getFirstLetter(words) {
 }
 
 // Invoca la funzione qui e stampa il risultato in console
-getFirstLetter(names);
+console.log(getFirstLetter(names));
 
 //Risultato atteso: ["A", "L", "M", "A", "G", "A"]
 
