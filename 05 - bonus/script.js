@@ -23,10 +23,10 @@ const newFunction = (username) => {
   }
 
   console.log(`Orario attuale: ${hours}:${minute}`);
-  console.log(`${msg} ${username}`);
+  return `${msg} ${username}`;
 };
 
 // Invoca la funzione qui e stampa il risultato in console
-newFunction(name);
+console.log(newFunction(name));
 
 //Risultato atteso se si passa 'Mario' alle 18: // Buonasera Mario.

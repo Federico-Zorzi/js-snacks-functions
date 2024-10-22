@@ -6,17 +6,17 @@ const userLetter = prompt("Inserisci una lettera");
 // Dichiara la funzione qui.
 
 const newNameListFunction = (namesList, userLetter) => {
-  let newNameList = [];
+  const newNameList = [];
   for (let i = 0; i < namesList.length; i++) {
     let currentValueAr = namesList[i];
     if (currentValueAr[0] === userLetter) {
       newNameList.push(currentValueAr);
     }
   }
-  console.log(newNameList);
+  return newNameList;
 };
 
 // Invoca la funzione qui e stampa il risultato in console
-newNameListFunction(names, userLetter);
+console.log(newNameListFunction(names, userLetter));
 
 //Risultato atteso se si passa la lettera A: ["Anna", "Adele", "Alessandra"]

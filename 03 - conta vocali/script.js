@@ -9,10 +9,10 @@ const vowelsNumber = (word, vowelsArray) => {
   for (let i = 0; i < word.length; i++) {
     if (vowelsArray.includes(word[i])) vowelsNum++;
   }
-  console.log("il numero di vocali e': " + vowelsNum);
+  return "il numero di vocali e': " + vowelsNum;
 };
 
 // Invoca la funzione qui e stampa il risultato in console
-vowelsNumber(word, vowels);
+console.log(vowelsNumber(word, vowels));
 
 //Risultato atteso se si passa 'javascript': 3 (a, a, i)
